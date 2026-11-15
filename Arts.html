@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея рисунков</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #5a67d8;
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .artwork-item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .artwork-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+        .artwork-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .artwork-item p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мои работы</h1>
+        <div class="gallery">
+            <div class="artwork-item">
+                <img src="image1.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="artwork-item">
+                <img src="image2.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="artwork-item">
+                <img src="image3.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="artwork-item">
+                <img src="image4.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="artwork-item">
+                <img src="image5.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="artwork-item">
+                <img src="image6.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="artwork-item">
+                <img src="image7.jpg" alt="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
